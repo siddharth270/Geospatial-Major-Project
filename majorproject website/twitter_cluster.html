@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    <link rel="stylesheet" href="final.css">
+
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        
+</head>
+<body>
+
+    <!-- <div class="navbar">
+		<a href="#home"><img src="gif&images/home-page.png">Home</a>
+		<a href="#about"><img src="gif&images/information-button.png">About</a>
+		<a href="#services"><img src="gif&images/customer-support (1).png">Services</a>
+	</div> -->
+    
+     <!-- SIDE MENUE CODE -->  
+    
+    <!-- FIRST MENUE -->
+    <div class="hero">
+        <video autoplay loop muted plays-inline class="back_video">
+            <source src="gif&images/earth 1851190.mp4" type="video/mp4">
+        </video>
+        <div class="front_page">
+            <h1>EXPLORE THE UNEXPLORED</h1>
+            <a href="#map_afe59b3504e44d946f4e02eefe97647c">START</a>
+        </div>
+    </div>
+    <div class="navbar">
+        <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a href="#123"><i class="fa fa-user" aria-hidden="true"></i> About</a>
+        <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>   
+    </div>
+    <!-- STARTING OF SMALL TABS -->
+   <div class="element_1">
+    <a href="#"><i class="fa fa-ambulance" aria-hidden="true"></i> Medical</a>
+   </div>
+   <div class="element_2">
+    <a href="#"><i class="fa fa-taxi" aria-hidden="true"></i> Cab</a>
+   </div>
+   <div class="element_3">
+    <a href="#"><i class="fa fa-bed" aria-hidden="true"></i> Hotel</a>
+   </div>
+   <div class="element_4">
+    <a href="#"><i class="fa fa-university" aria-hidden="true"> Bank</i></a>
+   </div>
+   <!-- STARTING OF SEARCH BAR -->
+    <div class="container">
+        <form action="" class="searchbar" id="searchbar_input">
+            <input type="text" placeholder="search" name="q">
+            <button type="submit"> <img src="gif&images/loupe.png"> </button>
+        </form>
+    </div>
+    <div class="folium-map" id="map_afe59b3504e44d946f4e02eefe97647c" >
+        <!-- <script src="final.js"></script> -->
+    </div>
+    <!-- <h1>ABOUT US SECTION</h1> -->
+    <div class="new_section-bg">
+        <img src="gif&images/abouts_section_bg.jpg">
+        <div class="about_us" id="123">
+            <IMG src="gif&images/ABOUT US SECTION.png">
+        </div>
+        <div class="container_about">
+
+            <div class="row">
+                <div class="col-md-4">
+
+                    <div class="main">
+                        <div class="service">
+                            <div class="service-logo">
+                                <img src="gif&images/gautam.jpeg" alt="">
+                            </div>
+                            <h4>GAUTAM JAIN</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur 
+                                adipisicing 
+                                elit. Dolores nemo, ducimus nisi 
+                                provident eos quas, iusto similique exercitationem 
+                                maiores veritatis natus 
+                                numquam officiis accusamus facilis quis 
+                                sunt culpa fuga id.</p>
+                        </div>
+                        <div class="shadow1"></div>
+                        <div class="shadow2"></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="main">
+                        <div class="service">
+                            <div class="service-logo">
+                                <img src="gif&images/siddharth.jpeg" alt="">
+                            </div>
+                            <h4>SIDDHARTH MEHTA</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur 
+                                adipisicing 
+                                elit. Dolores nemo, ducimus nisi 
+                                provident eos quas, iusto similique exercitationem 
+                                maiores veritatis natus 
+                                numquam officiis accusamus facilis quis 
+                                sunt culpa fuga id.</p>
+                        </div>
+                        <div class="shadow1"></div>
+                        <div class="shadow2"></div>
+                    </div>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="final.js"></script>
+        
+</body>
+</html>
+
+
+     
