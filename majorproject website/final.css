@@ -128,6 +128,7 @@ nav ul li a{
   font-size: 17px;
 
 }
+/* scroll reveal css */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 *{
@@ -153,6 +154,9 @@ section{
   padding: 80px 100px;
   color: #fff;
 }
+.sec-02{
+  margin-top: 18%;
+}
 
 .container{
   position: relative;
@@ -164,7 +168,7 @@ section{
 
 .main-title{
   font-size: 4em;
-  margin-top: 18%;
+  margin-top: 0%;
   margin-bottom: 50px;
 }
 
@@ -178,7 +182,13 @@ section{
 
 .content .image{
   position: relative;
-  width: 800px;
+  width: 870px;
+  height: 470px;
+  overflow: hidden;
+}
+.sec-01 .content .image{
+  position: relative;
+  width: 550px;
   height: 400px;
   overflow: hidden;
 }
@@ -279,8 +289,9 @@ section{
   display: grid;
   place-content: center;
   font-family: 'Poppins', sans-serif;
-  margin-left: 25%;
+  margin-left: 23%;
   margin-bottom: 10%;
+  margin-top: 8%;
 }
 #container{
   position: relative;
@@ -511,5 +522,9 @@ button{
     width: 143.67px;
   }
 }
+/* testimonials css start */
+
+
+
 
 
