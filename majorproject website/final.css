@@ -282,7 +282,7 @@ section{
   --grad-clr1: #141E30;
   --grad-clr2: #243B55;
 }
-#container
+#login123
 {
   height: 100vh;
   background: #f6f5f7;
@@ -293,7 +293,7 @@ section{
   margin-bottom: 10%;
   margin-top: 8%;
 }
-#container{
+#login123{
   position: relative;
   width: 850px;
   height: 500px;
@@ -318,7 +318,7 @@ section{
   z-index: 2;
 
 } 
-form{
+.form1{
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -343,7 +343,7 @@ form{
   height: 40px;
   width: 40px;
 }  
-span{
+.login-page span{
   font-size: 12px;
 }
 .infield{
@@ -351,13 +351,14 @@ span{
   margin: 8px 0px;
   width: 100%;
 }
-input{
+.login-page input{
   width: 100%;
   padding: 12px 8px ;
   background-color: #f3f3f3;
   border:none;
   outline: none;
 }
+
 label{
   position: absolute;
   left: 50%;
@@ -368,20 +369,21 @@ label{
   background: var(--linear-grad);
   transition: 0.3s;
 }
-input:focus ~ label{
+.login-page input:focus ~ label{
   width: 100%;
 }
+
 .social-container a{
   color:#333;
   font-size: 14px;
   text-decoration: none;
   margin: 15px 0px;
 }
-a.forget{
+#login123 a.forget{
   padding-bottom: 3px;
   border-bottom: 2px solid #EEE;
 }
-button{
+#login123 button{
   border-radius: 20px;
   border: 1px solid var(--grad-clr1);
   background: var(--grad-clr2);
@@ -523,6 +525,7 @@ button{
   }
 }
 /* testimonials css start */
+
 
 
 
