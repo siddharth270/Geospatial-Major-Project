@@ -30,18 +30,6 @@ function scrollHandler(e) {
     set = Math.max(set, dist);
     line.style.bottom = `calc(100% - ${set}px)`;
   }
-<<<<<<< HEAD
-})
-.to(".ball01", {autoAlpha:1, duration:0.05})
-.from(".theLine", {drawSVG:0, duration:4}, 0)
-.to(".ball01", {motionPath:{
-  path:".theLine",
-  align:".theLine",
-  alignOrigin:[0.5, 0.5],
-}, duration:4}, 0)
-.add(pulses, 0)
-=======
-
   if (dist > timeline.offsetHeight + 50 && !full) {
     full = true;
     line.style.bottom = `-50px`;
@@ -62,4 +50,4 @@ function scrollHandler(e) {
 scrollHandler();
 line.style.display = 'block';
 window.addEventListener('scroll', scrollHandler);
->>>>>>> gautam
+
