@@ -1,43 +1,38 @@
-/* .navbar {
-    width: 100%;
-    max-width: 400px;
-    overflow: hidden;
-    position: absolute;
-    background: rgba(255, 255, 255,0.2);
-    display: flex;
-    align-items: center;
-    border-radius: 60px;
-    padding: 2px 10px;
-    backdrop-filter: blur(4px) saturate(180%);
-    margin-left: 2%;
-    margin-top: 5%;
-  }
-
-  .navbar a {
-    float: left;
-    display: block;
-    color: #080707;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 20px;
-    font-family:'Times New Roman', Times, serif;
-    font-style:bold;
-    margin-left: 0%;
-  }
-
-  .navbar a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  div.navbar{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-   */
 
 body {
   font-family: Arial, sans-serif;
   font-size: 14px;
+}
+nav {
+  width: 100%;
+  height: 6%;
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: -8%;
+  background: rgba(255, 255, 255,0.2);
+  backdrop-filter: blur(4px) saturate(180%);
+  z-index: 500;
+}
+nav .logo {
+  padding:3px ;
+  width: 73px;
+  height: 42px;
+  margin-left: 1%;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-top: 2.4%;
+  margin-left: 30px;
+  margin-right: 60px;
+}
+nav ul li a {
+  text-decoration:dashed;
+  color: #fff;
+  font-size: 16px;
 }
 /* Style the navigation bar */
 /* .navbar {
@@ -73,7 +68,7 @@ body {
 /* div.navbar {
   box-shadow: 0 4px 8px 0 rgba(253, 252, 252, 0.952), 0 6px 20px 0 rgba(253, 252, 252, 0.936);
 } */
-.element_1 {
+/* .element_1 {
   width: 100%;
   max-width: 105px;
   background-color: #555;
@@ -168,7 +163,7 @@ div.element_3 {
 }
 div.element_4 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+} */
 /* 
 .searchbar {
   width: 100%;
@@ -322,9 +317,12 @@ div.element_4 {
 .main:hover.shadow1 {
   transform: translateY(-25px);
 } */
+
+/* main page css */
 .hero {
   width: 100%;
   height: 84%;
+  border-bottom-left-radius: 125px;
 }
 .front_page {
   text-align: center;
@@ -361,6 +359,7 @@ div.element_4 {
   top: 0%;
   object-fit: cover;
   bottom: 0;
+  border-bottom-left-radius: 125px;
   z-index: -1;
 }
 /* @media(max-aspect-ratio:16/9){
@@ -382,34 +381,7 @@ div.element_4 {
 ::-webkit-scrollbar{
   display: none;
 }
-nav {
-  width: 100%;
-  height: 6%;
-  position: fixed;
-  left: 0px;
-  right: 0px;
-  display: flex;
-  justify-content: space-between;
-  margin-top: -8%;
-  background: rgba(255, 255, 255,0.2);
-  backdrop-filter: blur(4px) saturate(180%);
-  z-index: 500;
-}
-nav.logo {
-  width: 80px;
-}
-nav ul li {
-  list-style: none;
-  display: inline-block;
-  margin-top: 2.4%;
-  margin-left: 30px;
-  margin-right: 60px;
-}
-nav ul li a {
-  text-decoration:dashed;
-  color: #fff;
-  font-size: 16px;
-}
+
 /* scroll reveal css */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
@@ -473,8 +445,7 @@ section {
   width: 550px;
   height: 400px;
   overflow: hidden;
-}
-
+}        
 .content .image img {
   z-index: 111;
   position: absolute;
@@ -515,7 +486,7 @@ section {
 .section-title {
   font-size: 3em;
   margin-bottom: 80px;
-  color: rgb(255, 242, 0);
+  color: rgb(255, 255, 255);
 }
 
 .info-title {
@@ -562,7 +533,7 @@ section {
 }
 
 .main-title{
-  color: rgb(255, 242, 0)
+  color: rgb(255, 255, 255)
 }
 /* css for login */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,500&display=swap");
@@ -579,6 +550,8 @@ section {
   background-size: cover;
   overflow: hidden;
   margin-top: 22%;
+  border-bottom-right-radius: 125px;
+  border-top-left-radius: 125px;
 }
 .hea h1{
   color: #f9f7f7;
@@ -605,6 +578,9 @@ section {
   align-items: center;
   width: 100%;
   height: 100%;
+}
+.form-box.login h2{
+  color: #fff;
 }
 .login-section .form-box.register {
   transform: translateX(430px);
@@ -720,8 +696,11 @@ section {
   margin: 0 auto;
   max-width: 100%;
   margin-top: -21%;
-  background-color: #ffffff;
+  background-color: #92c1fb;
+  background: linear-gradient(to bottom , #92c1fb,#6742ff);
   box-shadow: 10px 7px 7px 7px #05050f;
+  border-bottom-left-radius: 125px;
+  border-top-right-radius: 125px;
 
 }
 .top-section{
@@ -808,6 +787,135 @@ h1{
   color: #111222;
 }
 h2{
-  color: rgb(0, 94, 255);
+  color: #111222;
 }
+/* footer css starting */
+footer{
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  background: linear-gradient(to right , #00093c,#2d0b00);
+  color: #fff;
+  padding: 100px 0 30px;
+  border-top-left-radius: 125px;
+  font-size: 13px;
+  line-height: 20px;
+  margin-top: 2%;
 
+}
+.row{
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items:flex-start ;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.col{
+  flex-basis: 25%;
+  padding: 3px;
+  margin-left: -4%;
+}
+.col:nth-child(2),.col:nth-child(3){
+  flex-basis: 15%;
+
+}
+.logo{
+  width: 80px;
+  margin-bottom: 30px;
+}
+.col h3{
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+}
+.email-id{
+  width: fit-content;
+  border-bottom: 1px solid #ccc;
+  margin: 20px 0;
+}
+ul li {
+  list-style: none;
+  margin-bottom: 12px;
+ 
+}
+ul li a{
+  text-decoration: none;
+  color: #fff;
+}
+.foot{
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 50px;
+}
+.foot i{
+  font-size: 18px;
+  margin-right: 10px;
+}
+.foot button{
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+}
+.foot input{
+  width: 100%;
+  background: transparent;
+  color: #ccc;
+  border: 0;
+  outline: none;
+}
+hr{
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  margin:20px auto;
+}
+.copyright{
+  text-align: center;
+}
+.underline{
+  width: 100%;
+  height: 5px;
+  background: #767676;
+  border-radius: 3px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  overflow: hidden;
+}
+.soci i{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  background: #ffffff30;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.underline span{
+  width: 15px;
+  height: 100%;
+  background: #fff;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  animation: moving 2s linear infinite;
+}
+@keyframes moving{
+  0%{
+    left: -20px;
+  }
+  100%{
+    left: 100%;
+  }
+}
