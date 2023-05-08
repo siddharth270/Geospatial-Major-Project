@@ -1,23 +1,23 @@
 "use strict";
 
 function qs(selector, all = false) {
-  return all ? document.querySelectorAll(selector) : document.querySelector(selector);
+  return all
+    ? document.querySelectorAll(selector)
+    : document.querySelector(selector);
 }
 
-const sections = qs('.sec', true);
-const timeline = qs('.timeline');
-const line = qs('.line');
+const sections = qs(".sec", true);
+const timeline = qs(".timeline");
+const line = qs(".line");
 line.style.bottom = `calc(100% - 20px)`;
 let prevScrollY = window.scrollY;
 let up, down;
 let full = false;
 let set = 0;
-const targetY = window.innerHeight * .8;
+const targetY = window.innerHeight * 0.8;
 
 function scrollHandler(e) {
-  const {
-    scrollY
-  } = window;
+  const { scrollY } = window;
   up = scrollY < prevScrollY;
   down = !up;
   const timelineRect = timeline.getBoundingClientRect();
@@ -36,12 +36,12 @@ function scrollHandler(e) {
     line.style.bottom = `-50px`;
   }
 
-  sections.forEach(item => {
+  sections.forEach((item) => {
     // console.log(item);
     const rect = item.getBoundingClientRect(); //     console.log(rect);
 
     if (rect.top + item.offsetHeight / 5 < targetY) {
-      item.classList.add('show-me');
+      item.classList.add("show-me");
     }
   }); // console.log(up, down);
 
@@ -49,5 +49,5 @@ function scrollHandler(e) {
 }
 
 scrollHandler();
-line.style.display = 'block';
-window.addEventListener('scroll', scrollHandler);
+line.style.display = "block";
+window.addEventListener("scroll", scrollHandler);
